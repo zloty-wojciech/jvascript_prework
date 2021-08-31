@@ -82,13 +82,13 @@ function playGame(playerInput){
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
-    printMessage('Zagrałeś kamień');
+    playGame(argPlayerMove);
   });
 
 document.getElementById('play-paper').addEventListener('click', function(){
-    printMessage('Zagrałeś papier');
+    playGame(argPlayerMove);
   });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
-    printMessage('Zagrałeś nożyce');
+    playGame(argPlayerMove);
   });
