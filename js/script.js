@@ -1,7 +1,8 @@
 // Functions
 
 function playGame(playerInput){
-
+    clearMessages();
+    
     function getMoveName(argMoveId){
         if (argMoveId == 1) {
             return 'kamień';
@@ -79,16 +80,18 @@ function playGame(playerInput){
             printMessage('Walkower!');
         }
     }
+
+    displayResult(argComputerMove, argPlayerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
-    playGame(argPlayerMove);
+    playGame(1);
   });
 
 document.getElementById('play-paper').addEventListener('click', function(){
-    playGame(argPlayerMove);
+    playGame(2);
   });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
-    playGame(argPlayerMove);
+    playGame(3);
   });
